@@ -4,7 +4,13 @@ namespace Support
 {
     static public class Support
     {
-        //Переход к следующему заданию
+        // Метод приветствия для одного из заданий
+        public static void Greeting()
+        {
+            Console.WriteLine("Привет. Я метод приветствия из сторонней библиотеки.");
+        }
+        
+        // Переход к следующему заданию
         public static void Next()
         {
             Console.WriteLine("\nНажмите Enter для продолжения...");
@@ -12,7 +18,7 @@ namespace Support
             Console.Clear();
         }
 
-        //Распечатать элементы массива
+        // Распечатать элементы массива
         public static void PrintAray<T>(T[] array)
         {
             Console.Write("Массив: ");
